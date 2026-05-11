@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node --watch dist/app.js",
+    "build": "pnpm tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

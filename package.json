@@ -4,6 +4,7 @@
   "description": "A collaborative platform designed for the smart management and reporting of supermarket shopping lists.",
   "private": true,
   "scripts": {
+    "api:build-dev": "pnpm run --filter 'sabercomprar-api' build && pnpm run --filter 'sabercomprar-api' dev",
     "commit": "sui-mono commit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
