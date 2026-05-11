@@ -1,0 +1,30 @@
+{
+  "name": "sabercomprar",
+  "version": "1.0.0",
+  "description": "A collaborative platform designed for the smart management and reporting of supermarket shopping lists.",
+  "private": true,
+  "scripts": {
+    "commit": "sui-mono commit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Typescript",
+    "Astro",
+    "React",
+    "Tailwind",
+    "ShadCN"
+  ],
+  "author": "caroWD",
+  "license": "ISC",
+  "packageManager": "pnpm@11.0.9",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@s-ui/mono": "^2.45.0"
+  }
+}
