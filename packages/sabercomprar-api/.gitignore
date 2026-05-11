@@ -35,4 +35,4 @@ build/
 .DS_Store
 
 # Drizzle Local DB
-loca.db
+local.db

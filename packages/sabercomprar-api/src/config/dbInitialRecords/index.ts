@@ -1,4 +1,3 @@
-export { NODE_ENV, PORT, DB_FILE_NAME, ACCEPTED_ORIGINS } from './config.js'
 export {
   sqlitePermissions,
   sqliteRolePermissions,
@@ -6,4 +5,4 @@ export {
   sqliteTeamPermissions,
   sqliteTeamRoleTeamPermissions,
   sqliteTeamRoles,
-} from './dbInitialRecords/index.js'
+} from './sqlite/index.js'

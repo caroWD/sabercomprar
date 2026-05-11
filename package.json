@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "api:build-dev": "pnpm run --filter 'sabercomprar-api' build && pnpm run --filter 'sabercomprar-api' dev",
+    "api:local-db": "pnpm run --filter 'sabercomprar-api' drizzle:push && pnpm run --filter 'sabercomprar-api' drizzle:records",
     "commit": "sui-mono commit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
