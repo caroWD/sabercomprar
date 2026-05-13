@@ -2,6 +2,7 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import { PORT } from './config/index.js'
 import { corsMiddleware, errorMiddleware } from './middleware/index.js'
+import { teamPermissionRouter, teamRoleRouter } from './modules/index.js'
 
 const app = express()
 
@@ -9,7 +10,8 @@ app.use(express.json())
 app.use(corsMiddleware())
 app.use(cookieParser())
 
-app.get('/', (_req, res) => res.send('Hello World!'))
+app.use('/api/team-permission', teamPermissionRouter)
+app.use('/api/team-role', teamRoleRouter)
 
 app.use(errorMiddleware)
 
