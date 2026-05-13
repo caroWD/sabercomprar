@@ -1,1 +1,1 @@
-export { rootSchema } from './rootSchema.js'
+export * from './rootSchema.js'

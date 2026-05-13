@@ -1,3 +1,3 @@
-export { BaseDescription } from './BaseDescription.js'
-export { BaseName } from './BaseName.js'
-export { BaseSlug } from './BaseSlug.js'
+export * from './BaseDescription.js'
+export * from './BaseName.js'
+export * from './BaseSlug.js'

@@ -1,2 +1,2 @@
-export { Root, RootId, RootState, RootStateEnum } from './domain/index.js'
-export { rootSchema } from './infrastructure/index.js'
+export * from './domain/index.js'
+export * from './infrastructure/index.js'

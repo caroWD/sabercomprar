@@ -1,1 +1,1 @@
-export { tempoSchema } from './tempoSchema.js'
+export * from './tempoSchema.js'

@@ -1,2 +1,2 @@
-export { RootId } from './RootId.js'
-export { RootState, RootStateEnum } from './RootState.js'
+export * from './RootId.js'
+export * from './RootState.js'

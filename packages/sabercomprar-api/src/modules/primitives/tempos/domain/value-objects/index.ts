@@ -1,3 +1,3 @@
-export { TempoCreatedAt } from './TempoCreatedAt.js'
-export { TempoArchivedAt } from './TempoArchivedAt.js'
-export { TempoUpdatedAt } from './TempoUpdatedAt.js'
+export * from './TempoCreatedAt.js'
+export * from './TempoArchivedAt.js'
+export * from './TempoUpdatedAt.js'

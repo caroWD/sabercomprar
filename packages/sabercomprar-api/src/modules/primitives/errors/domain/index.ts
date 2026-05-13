@@ -1,1 +1,1 @@
-export { DomainError } from './DomainError.js'
+export * from './DomainError.js'

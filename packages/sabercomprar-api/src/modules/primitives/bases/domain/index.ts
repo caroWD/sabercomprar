@@ -1,3 +1,3 @@
-export { Base } from './Base.js'
-export { BaseDescription, BaseName, BaseSlug } from './value-objects/index.js'
-export type { IBaseRepository } from './IBaseRepository.js'
+export * from './Base.js'
+export * from './value-objects/index.js'
+export * from './IBaseRepository.js'
