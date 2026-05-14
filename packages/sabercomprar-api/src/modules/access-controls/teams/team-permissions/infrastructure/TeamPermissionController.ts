@@ -10,7 +10,7 @@ import {
   TeamPermissionAlreadyExistsError,
   TeamPermissionNotFoundError,
 } from '../domain/TeamPermissionErrors.js'
-import { serviceContainer } from '../../../../../shared/index.js'
+import { serviceContainer } from '../../../../../shared/serviceContainer.js'
 import type { TeamPermissionDto } from '../domain/index.js'
 
 export class TeamPermissionController {

@@ -6,6 +6,7 @@ import {
   teamPermissionRouter,
   teamRoleRouter,
   permissionRouter,
+  roleRouter,
 } from './modules/index.js'
 
 const app = express()
@@ -18,6 +19,7 @@ app.use('/api/team-permission', teamPermissionRouter)
 app.use('/api/team-role', teamRoleRouter)
 
 app.use('/api/permission', permissionRouter)
+app.use('/api/role', roleRouter)
 
 app.use(errorMiddleware)
 
