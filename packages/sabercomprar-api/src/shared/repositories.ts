@@ -5,6 +5,8 @@ import { DrizzleSqliteTeamPermissionRepository } from '../modules/access-control
 import { DrizzleSqliteTeamRoleRepository } from '../modules/access-controls/teams/team-roles/infrastructure/repositories/DrizzleSqliteTeamRoleRepository.js'
 import { DrizzleSqlitePermissionRepository } from '../modules/access-controls/globals/permissions/infrastructure/repositories/DrizzleSqlitePermissionRepository.js'
 import { DrizzleSqliteRoleRepository } from '../modules/access-controls/globals/roles/infrastructure/repositories/DrizzleSqliteRoleRepository.js'
+import { DrizzleSqliteTeamRepository } from '../modules/workspaces/teams/infrastructure/repositories/DrizzleSqliteTeamRepository.js'
+import { DrizzleSqliteUserRepository } from '../modules/auth/users/infrastructure/repositories/DrizzleSqliteUserRepository.js'
 
 const client = createClient({ url: DB_FILE_NAME })
 const sqlite = drizzle({ client })
@@ -17,3 +19,7 @@ export const permissionRepository = new DrizzleSqlitePermissionRepository(
   sqlite
 )
 export const roleRepository = new DrizzleSqliteRoleRepository(sqlite)
+
+export const teamRepository = new DrizzleSqliteTeamRepository(sqlite)
+
+export const userRepository = new DrizzleSqliteUserRepository(sqlite)
